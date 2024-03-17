@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburgueria Chapolin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      margin-bottom: 80px;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      padding-top: 20px;
+    }
+    header img {
+      max-width: 70px;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      right: 20px;
+    }
+    header .buttons {
+      position: absolute;
+      top: 10px; 
+      right: 20px; 
+    }
+    header .buttons a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      margin-right: 10px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+    }
+    header .buttons a:hover {
+      background-color: #fff;
+      color: #333;
+    }
+    h1 {
+      margin: 0;
+      color: #FF6347;
+    }
+    .hero-image {
+      background-image: url('hamburguer.jpg');
+      background-size: cover;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .hero-text {
+      text-align: center;
+      color: #fff;
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .menu-item {
+      margin: 0 20px;
+      text-align: center;
+    }
+    .menu-item img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .menu-item h3 {
+      margin: 5px 0;
+    }
+    .menu-item p {
+      margin: 5px 0;
+      color: #666;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      clear: both;
+    }
+    h2{
+      color: #000;
+    }
+    .team {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+    .team-member {
+      text-align: center;
+      margin: 20px;
+      flex: 1;
+    }
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .team-member h3 {
+      margin: 10px 0;
+    }
+    .form-container {
+      margin-top: 50px;
+      text-align: center;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    form input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="C:\Users\gugas\OneDrive\Imagens\Chapolim.jpeg" alt="Logo da Hamburgueria Delícia">
+    <div class="buttons">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+      </div>
+    <h1>Hamburgueria Chapolim</h1>
+    <p>A melhor hamburgueria da região!</p>
+  </header>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h2>Conheça nossos deliciosos hambúrgueres</h2>
+    </div>
+  </div>
+  <div id="cardapio" class="container">
+    <h2>Cardápio</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="C:\Users\gugas\OneDrive\Imagens\Artesanal de carne.jpeg" alt="Hambúrguer de carne">
+        <h3>Hambúrguer de Carne</h3>
+        <p>R$ 27,00</p>
+        <p>Delicioso hambúrguer de carne 100% bovina, com queijo cheddar derretido, alface, tomate, cebola roxa e molho especial.</p>
+      </div>
+      <div class="menu-item">
+        <img src="C:\Users\gugas\OneDrive\Imagens\Artesanal de frango.png" alt="Hambúrguer de frango">
+        <h3>Hambúrguer de Frango</h3>
+        <p>R$ 24,00</p>
+        <p>Saboroso hambúrguer de frango grelhado, com queijo prato, alface, tomate, picles e maionese.</p>
+        
+      </div>
+      <div class="menu-item">
+        <img src="C:\Users\gugas\OneDrive\Imagens\Artesanal vegetariano.jpeg" alt="Hambúrguer vegetariano">
+        <h3>Hambúrguer Vegetariano</h3>
+        <p>R$ 30,00</p>
+        <p>Opção saudável e deliciosa, feita com hambúrguer de grão de bico, queijo muçarela, alface, tomate, cebola caramelizada e maionese vegana.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<h2>Sobre Nós</h2>
+<p>Somos uma hamburgueria apaixonada por proporcionar experiências incríveis aos nossos clientes. Nossa missão é oferecer hambúrgueres deliciosos, feitos com ingredientes frescos e de alta qualidade.</p>
+<div id="sobre" class="team">
+    <div class="team-member">
+      <img src="C:\Users\gugas\OneDrive\Imagens\CEO.jpg" alt="CEO">
+      <h3>Neymar Jr</h3>
+      <p>CEO</p>
+    </div>
+    <div class="team-member">
+      <img src="C:\Users\gugas\OneDrive\Imagens\Chef.jpg" alt="Chefe de Cozinha">
+      <h3>Érick Jacquin</h3>
+      <p>Chefe de Cozinha</p>
+    </div>
+    <div class="team-member">
+      <img src="C:\Users\gugas\OneDrive\Imagens\Chef TI.jpeg" alt="Membro da equipe 3">
+      <h3>Steve Jobs</h3>
+      <p>Chefe de TI</p>
+    </div>
+  </div>
+</div>
+<h2>Contato para Atendimento</h2>
+<div id="contato" class="form-container">
+  <form action="#" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="phone">Telefone:</label>
+    <input type="text" id="phone" name="phone" required>
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+  <footer>
+    <p>&copy; 2024 Hamburgueria Chapolim. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
